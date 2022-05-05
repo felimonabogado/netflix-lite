@@ -1,0 +1,241 @@
+@import './slick/slick.scss';
+@import './slick/slick-theme.scss';
+
+$breakpoint-tablet: 767px;
+
+body{
+    background-color: #141414;
+    h1, h2, h3, h4, h5, h6, p, li, p, a, strong, em, i, b, li, ol{
+        color: #fff;
+    }
+}
+
+.page-container {
+    padding-top: 40px;
+    overflow: hidden;
+}
+
+button{
+    font-size: 16px;
+    border-radius: 3px;
+}
+
+.menu-bar {
+
+    .logo{
+        vertical-align: middle;
+        padding: 5px 0;
+    }
+
+    li{
+        a{
+            color: #ffffff;
+            font-weight: 300 !important;
+            font-size: 16px;
+            text-transform: capitalize;
+        }
+    } 
+
+    li:hover{
+        a:hover{
+            font-weight: bold !important;
+        }
+    }
+    
+}
+
+.sign-in-section {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    form {
+        background-color: #000000bf;
+        padding: 40px;
+        border-radius: 5px;
+        max-width: 400px;
+        margin: 0 auto;
+        backdrop-filter: blur(5px);
+
+        .logo {
+            margin-bottom: 22px;
+
+            img{
+                max-width: 150px;
+            }
+        }
+
+        h2 {
+            text-align: center;
+            font-weight: bold;
+        }
+
+        input {
+            width: 100%;
+            display: block;
+            box-sizing: border-box;
+            margin: 16px 0;
+            font-size: 20px;
+            padding: 10px 5px;
+            color: #fff;
+            border-radius: 3px;
+            border: 0;
+            outline: 0;
+        }
+
+        input::placeholder{
+            color: rgb(167, 167, 167);
+        }
+
+        input#email, 
+        input#password {
+            background-color: #333;
+        }
+
+        input[type=submit]{
+            background-color: #E50914;
+        }
+    }
+}
+
+.page-banner {
+    height: 100vh;
+    margin-bottom: -25vh;
+    display: flex;
+    padding: 0 !important;
+    justify-content: end;
+    align-items: center;
+    background-position: center;
+    background-size: cover;
+
+    .row {
+        z-index: 99;
+    }
+
+    .content {
+
+        p{
+            font-size: 18px;
+            line-height: 30px;
+        }
+
+        img {
+            max-width: 350px;
+            margin: 0 !important;
+            padding-bottom: 22px;
+        }
+    }
+
+}
+
+@media(min-width: 768px){
+    .content {
+        width: 50%;
+    }
+}
+
+.page-banner::after{
+    content: '';
+    display: block;
+    position: absolute;
+    height: inherit;
+    width: 100%;
+    background-image: linear-gradient(9deg, #141414 8%, transparent 100%);
+    bottom: -20vh;
+}
+
+
+
+.movie-section .row {
+    margin-top: 60px;
+    margin-bottom: 60px;
+}
+
+.movie-list {
+
+    .slick-list {
+        overflow: visible;
+    }
+
+    .slick-track:hover{
+        z-index: 9999;
+    }
+
+    .slick-track{
+        display: flex !important;
+
+    }
+
+    .slick-slide{
+        height: inherit !important;
+    }
+
+    .slick-active .movie-card:hover {
+        transform: scale(1.3);
+        transition: 0.3s ease-out;
+        position: absolute;
+        max-width: 300px;
+        width: 100%;
+        background-color: #141414;
+        box-shadow: 0 0 11px 3px #000;
+    }
+
+    .movie-card {
+        margin: 0 5px;
+        overflow: hidden;
+        border-radius: 3px;
+    }
+
+    .movie-details {
+        padding: 10px 15px;
+        position: relative;
+
+        h2{
+            font-size: 18px;
+            padding: 0;
+        }
+        
+        p{
+            font-size: 12px;
+        }
+
+        button {
+            position: absolute;
+            right: 18px;
+            top: 14px;
+            font-size: 14px !important;
+            padding: 3px 10px;
+        }
+    }
+
+    .movie-card:not(:hover) .movie-details {
+        display: none;
+    }
+
+    .slick-slide:not(.slick-active) {
+        opacity: 0.4;
+        pointer-events: none;
+    }
+
+    // .movie-card, .movie-banner, .slick-slide > div {
+    //     height: 100%;
+    // }
+
+    .movie-banner{
+        height: 150px;
+
+        img {
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+}
+
+footer {
+    background-color: #181818;
+    border-top: 1px solid #2a2a2a;
+    p{
+        color: #fff;
+    }
+}
