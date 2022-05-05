@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/netflix-lite/static/css/main.88cacc0b.css",
-    "main.js": "/netflix-lite/static/js/main.217cb16d.js",
+    "main.js": "/netflix-lite/static/js/main.f51260b7.js",
     "static/js/787.5df977dd.chunk.js": "/netflix-lite/static/js/787.5df977dd.chunk.js",
     "static/media/movie-poster-01 copy.jpg": "/netflix-lite/static/media/movie-poster-01 copy.5d3ee59909e7ab9e98e4.jpg",
     "static/media/SourceSansPro-Regular.eot": "/netflix-lite/static/media/SourceSansPro-Regular.a95d2273198a630bc5fa.eot",
@@ -48,11 +48,11 @@
     "static/media/slick.woff": "/netflix-lite/static/media/slick.295183786cd8a1389865.woff",
     "index.html": "/netflix-lite/index.html",
     "main.88cacc0b.css.map": "/netflix-lite/static/css/main.88cacc0b.css.map",
-    "main.217cb16d.js.map": "/netflix-lite/static/js/main.217cb16d.js.map",
+    "main.f51260b7.js.map": "/netflix-lite/static/js/main.f51260b7.js.map",
     "787.5df977dd.chunk.js.map": "/netflix-lite/static/js/787.5df977dd.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.88cacc0b.css",
-    "static/js/main.217cb16d.js"
+    "static/js/main.f51260b7.js"
   ]
 }
